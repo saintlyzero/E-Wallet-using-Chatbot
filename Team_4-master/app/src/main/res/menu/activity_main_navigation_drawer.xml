@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/account_cards"
+            android:title="@string/account" />
+        <item
+            android:id="@+id/nav_statement"
+            android:icon="@drawable/account_statement"
+            android:title="@string/account_statement" />
+        <!--<item
+            android:id="@+id/nav_transaction"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/transaction_history" />-->
+        <item
+            android:id="@+id/nav_transfer_funds"
+            android:icon="@drawable/account_fund_transfer"
+            android:title="@string/transfer_funds" />
+        <item
+            android:id="@+id/nav_chatbot"
+            android:icon="@drawable/chatbot"
+            android:title="@string/chatbot" />
+
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/faq_icon"
+            android:title="@string/bank_faq" />
+
+    </group>
+
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

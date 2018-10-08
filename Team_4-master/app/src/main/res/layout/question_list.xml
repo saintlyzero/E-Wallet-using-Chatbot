@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        android:id="@+id/cardView1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:id="@+id/tv_question"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="13sp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:background="@color/colorPrimaryDark" />
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:el_duration="300"
+                app:el_expanded="false"
+                app:el_parallax="0.5"
+                android:id="@+id/expanded_menu">
+                <TextView
+                    android:id="@+id/tv_correctAnswer"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="12sp"
+                    android:elevation="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:background="@color/colorPrimary" />
+
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.codeit.team_4.fragments.FundTransferFragment"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <EditText
+                    android:id="@+id/transferet1"
+                    android:layout_width="302dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:hint="@string/frag_fund_transfer_phone"
+                    android:inputType="phone"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white" />
+
+                <ImageButton
+                    android:id="@+id/transferimgbtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/contacts"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/transferamt"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/frag_fund_transfer_amount"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:inputType="number"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/transferdesc"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:hint="@string/frag_fund_transfer_description" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/transferbtn1"
+                android:textColor="@android:color/black"
+                android:background="@color/colorAccent"
+                android:text="@string/frag_fund_transfer_btn_transfer"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

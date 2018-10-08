@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codeit.team_4.login.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <!--<ImageView
+            android:layout_width="@dimen/logo_w_h"
+            android:layout_height="@dimen/logo_w_h"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="0dp"
+            android:contentDescription="@string/logo"/>
+            TODO: Add icon pls
+            android:src="@mipmap/iconcp"-->
+
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/hint_name"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/hint_mobile"
+            android:inputType="phone"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/register_confirm_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/hint_confirm_password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <!-- login Button -->
+
+        <Button
+            android:id="@+id/register_btn_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/colorAccent"
+            android:text="@string/register_btn_register"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/register_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:text="@string/register_already_login"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/register_progressbar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|bottom"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+</android.support.design.widget.CoordinatorLayout>
