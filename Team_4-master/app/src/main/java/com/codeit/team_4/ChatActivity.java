@@ -49,7 +49,7 @@ public class ChatActivity extends AppCompatActivity implements AIListener {
     SharedPreferences prefs;
     private AIService aiService;
     private AIDataService aiDataService;
-    private static final String CLIENT_ACCESS_TOKEN = "2fdd6c86afb14cd494b2baea0c581612";
+    private static final String CLIENT_ACCESS_TOKEN = "<Your Acces Key Token>";
     static User me, you;
     //private boolean semaphore = true;
     Bitmap bmp;
@@ -178,16 +178,7 @@ public class ChatActivity extends AppCompatActivity implements AIListener {
         me = new User(myId, myName, myIcon);
         you = new User(yourId, yourName, yourIcon);
 
-        /*chatView.setBackgroundColor(Color.BLUE);
-        chatView.setEnableSwipeRefresh(true);*/
-        /*chatView.setLeftBubbleColor(Color.parseColor("#283593"));
-        chatView.setRightBubbleColor(Color.parseColor("#001064"));
-        chatView.setLeftMessageTextColor(Color.WHITE);
-        chatView.setRightBubbleColor(Color.WHITE);
-        //chatView.setBackgroundColor(Color.BLUE);
-        chatView.setSendButtonColor(Color.parseColor("#5f5fc4"));
-        chatView.setSendTimeTextColor(Color.parseColor("#e8eaf6"));
-        chatView.setOptionButtonColor(Color.parseColor("#5f5fc4"));*/
+     
         chatView.setInputTextHint("Let's talk");
         chatView.setOptionIcon(R.drawable.ic_action_mic);
         chatView.setSendTimeTextColor(Color.WHITE);
