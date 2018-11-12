@@ -1,5 +1,9 @@
 <?php
 
+/*
+	Add your server
+
+*/ 
 $servername = "localhost";
 $username = "";
 $password = "";
