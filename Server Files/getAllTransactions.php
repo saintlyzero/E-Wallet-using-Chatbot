@@ -1,0 +1,60 @@
+<?php
+
+$servername = "localhost";
+$username = "";
+$password = "";
+$dbname = "";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+	if($_SERVER['REQUEST_METHOD']=='POST'){
+		
+		;
+		$mobile=$_POST['mobile'];
+				
+		
+	$return_arr = array();
+	$sql = "SELECT * from transactions where sender='$mobile';";
+	$sql1 = "SELECT * from transactions where receiver='$mobile';";
+	$result = mysqli_query($conn,$sql);
+	
+	$response = array(); 
+	
+	$response['data'] = array(); 
+	
+	while($row = mysqli_fetch_array($result)){
+		$temp = array(); 
+		$temp['type']="1";
+		$temp['sender']=$row['sender'];
+		$temp['receiver']=$row['receiver'];
+		$temp['amount']=$row['amount'];
+		$temp['date']=$row['date'];
+		$temp['description']=$row['description'];
+		$temp['receiver_name']=$row['receiver_name'];
+		$temp['sender_name']=$row['sender_name'];
+			
+		array_push($response['data'],$temp);
+	}
+
+	$result1 = mysqli_query($conn,$sql1);
+	while($row = mysqli_fetch_array($result1)){
+		$temp1 = array(); 
+		$temp1['type']="0";
+		$temp1['sender']=$row['sender'];
+		$temp1['receiver']=$row['receiver'];
+		$temp1['amount']=$row['amount'];
+		$temp1['date']=$row['date'];
+		$temp1['description']=$row['description'];
+		$temp1['receiver_name']=$row['receiver_name'];
+		$temp1['sender_name']=$row['sender_name'];
+			
+		array_push($response['data'],$temp1);
+	}
+
+
+echo json_encode($response );
+		
+		
+	}else{
+echo 'error';
+}
