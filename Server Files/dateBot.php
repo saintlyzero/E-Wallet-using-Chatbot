@@ -1,7 +1,7 @@
 <?php
 
 /*
-	Add your server
+	Add your server Details
 
 */ 
 $servername = "localhost";
