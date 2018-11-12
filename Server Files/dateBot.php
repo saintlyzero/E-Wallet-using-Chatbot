@@ -2,7 +2,7 @@
 
 /*
 	Add your Server Details.
-	Use a common file for connesction and include it in every file
+	Use a common file for connection and include it in every file
 	
 
 */ 
